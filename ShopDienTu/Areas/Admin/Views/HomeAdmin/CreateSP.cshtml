@@ -1,0 +1,110 @@
+﻿@model ShopDienTu.Models.TDanhMucSp
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	ViewData["Title"] = "CreateUser";
+	Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<div style="margin:30px; margin-left:8%;">
+
+	<h4>Thêm mới người dùng</h4>
+	<hr />
+	<div class="row" style="margin-right:10%;">
+		<form asp-controller="HomeAdmin" asp-action="CreateSP" method="post" class="mt-3">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="TenSp" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<input asp-for="TenSp" class="form-control" placeholder="Tên sản phẩm">
+				</div>
+			</div>
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="MaHangSx" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<select asp-for="MaHangSx"
+							class="form-control" asp-items="@ViewBag.MaHangSx">
+					</select>
+				</div>
+				@* 
+				<div class="col-sm-10">
+					<input asp-asp-for="MaHangSxNavigation.HangSx" class="form-control" placeholder="Tên Đăng Nhập">
+				</div> *@
+			</div>
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="MaLoai" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<select asp-for="MaLoai"
+							class="form-control" asp-items="@ViewBag.MaLoai">
+					</select>
+				</div>
+				
+				@*< div class="col-sm-10">
+					<input asp-for="MaLoaiNavigation.Loai" class="form-control" placeholder="Số điện thoại">
+				</div> *@
+			</div>
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="AnhDaiDien" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<input asp-for="AnhDaiDien" class="form-control" placeholder="AnhDaiDien">
+				</div>
+			</div>
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="MaMauSac" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<select asp-for="MaMauSac" class="form-control"
+							asp-items="ViewBag.MaMauSac">
+					</select>
+				</div>
+
+				@* <div class="col-sm-10">
+					<input asp-for="MaMauSacNavigation.TenMauSac" class="form-control" placeholder="Mật Khẩu">
+				</div> *@
+			</div>
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="DonGiaBan" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<input asp-for="DonGiaBan" class="form-control" placeholder="Đơn Giá">
+				</div>
+			</div>
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="GiamGia" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<input asp-for="GiamGia" class="form-control" placeholder="Giảm giá">
+				</div>
+			</div>
+
+
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="Slton" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<input asp-for="Slton" class="form-control" placeholder="Số lượng tồn">
+				</div>
+			</div>
+			<div style="margin-top:7px" class="form-group row">
+				<label asp-for="GioiThieuSp" class="col-sm-2 col-form-label"></label>
+				<div class="col-sm-10">
+					<input asp-for="GioiThieuSp" class="form-control" placeholder="Giới Thiệu">
+				</div>
+			</div>
+
+			<div>
+				<button  class="btn btn-primary" style=" margin-top:2%;">Create</button>
+			</div>
+
+		</form>
+	</div>
+
+	<div>
+		<a asp-action="DanhSachSP">Back to List</a>
+	</div>
+
+
+</div>

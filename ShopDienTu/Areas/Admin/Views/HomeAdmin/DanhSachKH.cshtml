@@ -1,0 +1,87 @@
+﻿@model IEnumerable<ShopDienTu.Models.TKhachHang>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Danh Sách Khách Hàng";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<div style="margin:2%;">
+    <h2>Danh Sách Khách Hàng</h2>
+    <div class="col-md-6">
+        <div class="header-search">
+            <form>
+
+                <input class="input" placeholder="Search here">
+                <button class="search-btn" style="color:darkred;">Search</button>
+            </form>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenKhachHang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UsernameNavigation.Username)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SoDienThoai)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UsernameNavigation.Password)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DiaChi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NgaySinh)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GhiChu)
+                </th>
+
+                <th>Chức Năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenKhachHang)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UsernameNavigation.Username)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoDienThoai)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UsernameNavigation.Password)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiaChi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgaySinh)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GhiChu)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.MaKhachHang">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@item.MaKhachHang">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-action="CreateKH" class="btn btn-primary" style=" margin-top:2%;">Create</a>
+</div>

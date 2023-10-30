@@ -1,0 +1,307 @@
+﻿
+.bg-login-image {
+    background: url(https://vn-live-01.slatic.net/p/mdc/03b895db9c7b85ae98973b0941d66696.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+:root {
+    --blue: #4e73df;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #e74a3b;
+    --orange: #fd7e14;
+    --yellow: #f6c23e;
+    --green: #1cc88a;
+    --teal: #20c9a6;
+    --cyan: #36b9cc;
+    --white: #fff;
+    --gray: #858796;
+    --gray-dark: #5a5c69;
+    --primary: #4e73df;
+    --secondary: #858796;
+    --success: #1cc88a;
+    --info: #36b9cc;
+    --warning: #f6c23e;
+    --danger: #e74a3b;
+    --light: #f8f9fc;
+    --dark: #5a5c69;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+
+
+body {
+
+    margin: 0;
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+
+
+small {
+    font-size: 80%
+}
+
+
+
+a {
+    color: #4e73df;
+    text-decoration: none;
+    background-color: transparent
+}
+
+    a:hover {
+        color: #224abe;
+        text-decoration: underline
+    }
+
+    a:not([href]):not([class]) {
+        color: inherit;
+        text-decoration: none
+    }
+
+        a:not([href]):not([class]):hover {
+            color: inherit;
+            text-decoration: none
+        }
+
+
+.form-group
+{
+    margin-bottom:1rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: 1.35rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+form.user .form-control-user
+{
+    font-size: 15px;
+    border-radius:10rem;
+    padding:1.5rem 1 rem;
+    padding: 20px;
+}
+form.user .btn-user {
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    padding: 0.8rem 1rem;
+}
+.btn-block {
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+.btn-primary {
+    color: #fff;
+    background-color: darkgrey;
+    border-color: cornflowerblue;
+    color: #fff;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    font-weight:400;
+    text-align: center;
+    vertical-align:middle;
+    user-select:none;
+    border: 1px solid gray;
+    line-height:1.5;
+    border-radius:0.35rem;
+}
+hr{
+
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border:0;
+    border-top:1px solid rgba(0,0,0,.1);
+    box-sizing: content-box;
+    height:0;
+    overflow:visible;
+}
+.btn-google {
+    color: #fff;
+    background-color: #ea4335;
+    border-color: #fff;
+}
+button{
+    text-decoration:none;
+    font-size: 1.5rem;
+}
+
+.fab, .far {
+    font-weight: 400;
+    color: #fff;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    color: #fff;
+}
+i {
+    color: #fff;
+}
+.fa-fw{
+    text-align:center;
+    width:1.25rem;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-google{
+    color:#fff;
+}
+.btn-block + .btn-block {
+    margin-top: 0.5rem;
+}
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #fff;
+}
+.text-center {
+    text-align: center !important;
+}
+.small, small {
+    font-size: 100%;
+    font-weight: 400;
+}
+a {
+    color: #4e73df;
+    text-decoration: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+input:not([type="range"]):not([type="color"]) {
+    writing-mode: horizontal-tb !important;
+}
+
+input[type="email" i] {
+    padding: 1px 2px;
+}
+
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+}
+
+input {
+    font-style:;
+    font-variant-ligatures:;
+    font-variant-caps:;
+    font-variant-numeric:;
+    font-variant-east-asian:;
+    font-variant-alternates:;
+    font-weight:;
+    font-stretch:;
+    font-size:;
+    font-family:;
+    font-optical-sizing:;
+    font-kerning:;
+    font-feature-settings:;
+    font-variation-settings:;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    
+}
+.st{
+    padding:7%;
+    margin:0;
+}
+.h4, h4{
+    font-size:30px;
+}
+.row{
+    margin:0;
+}
